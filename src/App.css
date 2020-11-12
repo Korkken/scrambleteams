@@ -1,0 +1,185 @@
+
+font-face {
+  font-family: 'Circular std';
+  src: url('fonts/circular-std.otf'), format('opentype');
+}
+.App {
+  background-color:#0B252C;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  font-family: 'Circular std', Fallback, sans-serif;
+}
+
+.top-pic {
+  background-image: url('Football.png');
+  Width: 100%;
+  height: 720px;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.holy-logo {
+  width:80%;
+  height: 20%;
+}
+
+.heading {
+  Width: 80%;
+  color: white;
+  height: 80%;
+}
+
+.main-heading {
+  font-size: 62px;
+  font-weight: 700;
+}
+
+span {
+  display: block;
+}
+.sub-heading {
+  font-size: 22px;
+  font-weight: 400;
+}
+.green-button {
+  height: 50px;
+  width: 260px;
+  border-radius: 6px;
+  Fill: solid;
+  background-color: #8CC484;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.transparent-button {
+  height: 50px;
+  width: 260px;
+  border-radius: 6px;
+  Font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  margin-top: 20px;
+}
+.heading-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.scramble-view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input-part {
+  width: 80%;
+  Color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+}
+.get-started {
+  Font-size: 32px;
+  margin-bottom: 20px;
+}
+.text-input {
+  Width: 560px;
+  height: 209px;
+}
+.text-box-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.add-names {
+  margin-bottom: 10px;
+}
+.text-buttons {
+  width: 45%;
+  display:flex;
+}
+.drop-down-menu {
+  margin-left: 20px;
+  width:160px;
+  height:44px;
+}
+.results {
+  width: 80%;
+  Color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top:50px;
+}
+.teams {
+  width: 80%;
+  display:flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+.team-header {
+  margin-bottom: 20px;
+  display:flex;
+  align-items: center;
+}
+.users-image {
+  height: 31.5px;
+  width: 31.5px;
+}
+.team {
+  font-size: 22px;
+  display:flex;
+  flex-direction: column;
+}
+.team-container {
+  width: 100%;
+  Display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.persons {
+  height: 50px;
+  width: 260px;
+  border-radius: 6px;
+  Fill: solid;
+  background-color: #8CC484;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.guide-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.arrow {
+  width: 20%;
+  background-image: url('./icon/arrow.png');
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 820px) {
+  .main-heading {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .sub-heading {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .text-input {
+    Width: 250px;
+    height: 150px;
+  }
+  .drop-down-menu {
+    margin-left: 0;
+  }
+  .team-header {
+    margin-top: 15px;
+  }
+
+}
