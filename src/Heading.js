@@ -7,7 +7,7 @@ function Heading() {
   const onClick = () => setshowArrow(!showArrow)
     return (
       <div className="top-pic">
-          <div className="holy-logo"><img src={group}></img></div>
+          <div className="holy-logo"><img className="logo" src={group}></img></div>
         <div className="heading">
           <div className="main-heading">
            <span>Like scrambled eggs, </span>

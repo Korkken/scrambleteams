@@ -83,6 +83,9 @@ function ScrambleView(props) {
                     }
                 </div>
             </div>
+            <div className="footer">
+               <span> Copyright 2020-2021 holymolysthlm.se - All Rights Reserved.</span>
+            </div>
         </div>
     );
 }
