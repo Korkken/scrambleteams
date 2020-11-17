@@ -3,7 +3,7 @@ import users from './icon/users.png'
 import group from './icon/Group.png'
 
 const copyToClipBoard = (members) => {
-    const copiedMembers = members.join('\n')
+    const copiedMembers = 'Team' + ' ' + members[0] + '\n' + members.join('\n')
     navigator.clipboard.writeText(copiedMembers)
   };
 

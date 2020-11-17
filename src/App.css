@@ -4,6 +4,7 @@ font-face {
   src: url('fonts/circular-std.otf'), format('opentype');
 }
 .App {
+  width: 100%;
   background-color:#0B252C;
   min-height: 100vh;
   display: flex;
@@ -30,7 +31,6 @@ font-face {
   margin-top: 200px;
   color: #0B252C;
   align-items: center;
-  padding-left: 140px;
 }
 .holy-logo {
   width:80%;
@@ -185,9 +185,8 @@ span {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.guide-wrapper {
-  display: flex;
-  flex-direction: row;
+.copyright{
+  margin-left: 140px;
 }
 .arrow {
   width: 20%;
@@ -195,23 +194,75 @@ span {
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 820px) {
+  .heading {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .footer {
+    width: 100%;
+    font-size: 16px;
+  }
+  .copyright {
+    margin: 0;
+  }
+  .input-part {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .results {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .teams {
+    width: 95%;
+    margin-left: 20px
+  }
   .main-heading {
-    font-size: 35px;
+    font-size: 42px;
     font-weight: 500;
+    line-height: 120%;
   }
   .sub-heading {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 23px;
+  }
+  .text-box-row {
+    flex-direction: column;
   }
   .text-input {
-    Width: 250px;
-    height: 150px;
+    Width: 93%;
+    height: 209px;
   }
   .drop-down-menu {
     margin-left: 0;
   }
   .team-header {
     margin-top: 15px;
+  }
+  .guide-wrapper {
+    width: 100%
+  }
+  .green-button {
+    width: 95%;
+  }
+  .transparent-button {
+    width: 95%;
+  }
+  .persons {
+    width: 95%;
+  }
+  .text-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .holy-logo {
+    width: 95%;
+    margin-left: 20px;
+  }
+  .team {
+    width: 100%;
+    margin: 0;
   }
 
 }
