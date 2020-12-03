@@ -3,8 +3,9 @@ import users from './icon/users.png'
 import group from './icon/Group.png'
 
 const copyToClipBoard = (members) => {
-    const copiedMembers = 'Team' + ' ' + members[0] + '\n' + members.join('\n')
+    const copiedMembers = 'Team ' + members[0] + '\n' +  members.map((person, index) => index + 1 + '. ' + person).join('\n')
     navigator.clipboard.writeText(copiedMembers)
+    console.log(members)
   };
 
 function Teams(props) {
