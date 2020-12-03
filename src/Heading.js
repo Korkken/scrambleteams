@@ -1,13 +1,13 @@
 import './App.css'
 import React, { useState } from 'react';
-import group from './icon/Group32.png'
+import logo from './icon/Logo.svg'
 
 function Heading() {
   const [showArrow, setshowArrow] = React.useState(false)
   const onClick = () => setshowArrow(!showArrow)
     return (
       <div className="top-pic">
-          <div className="holy-logo"><img className="logo" src={group}></img></div>
+          <div className="holy-logo"><img className="logo" src={logo}></img></div>
         <div className="heading">
           <div className="main-heading">
            <span>Like scrambled eggs, </span>

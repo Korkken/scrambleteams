@@ -1,6 +1,6 @@
 import './App.css'
-import users from './icon/users.png'
-import group from './icon/Group.png'
+import users from './icon/users.svg'
+import group from './icon/Group.svg'
 
 const copyToClipBoard = (members) => {
     const copiedMembers = 'Team ' + members[0] + '\n' +  members.map((person, index) => index + 1 + '. ' + person).join('\n')
