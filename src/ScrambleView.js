@@ -70,9 +70,8 @@ function ScrambleView(props) {
             </div>
             <div className="results">
                 <span className="get-started">Results</span>
-                <span>Here are the teams. If the number of participants</span>
-                <span>is unequal to the number of teams,</span>
-                <span>some teams will have fewer or more players </span>
+                <span>Here are the teams. If the number of participants is unequal to the number of </span>
+                <span>teams, some teams will have fewer or more players </span>
             </div>
             <div className="teams">
                 <div className="team-container">
