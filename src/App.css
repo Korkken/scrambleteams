@@ -14,10 +14,12 @@ font-face {
 }
 
 .top-pic {
-  background-image: url('Football.png');
+  background-image: url('football.jpg');
   Width: 100%;
   height: 720px;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,22 +64,39 @@ span {
 }
 .green-button {
   height: 50px;
-  width: 260px;
+  width: 220px;
   border-radius: 6px;
-  Fill: solid;
   background-color: #8CC484;
   color: white;
   font-size: 20px;
   margin-top: 20px;
   margin-right: 20px;
   font-weight: normal;
+  border: none;
 }
 .green-button:hover {
   background-color: #5D926F;
 }
 .transparent-button {
+  border: 1px solid #FFFFFF;
   height: 50px;
-  width: 260px;
+  width: 220px;
+  border-radius: 6px;
+  Font-size: 20px;
+  color: white;
+  background-color: transparent;
+  margin-top: 20px;
+  font-weight: normal;
+  line-height: 25px;
+}
+.transparent-button:hover, .copy-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.copy-button {
+  border: 1px solid #FFFFFF;
+  height: 50px;
+  width: 320px;
   border-radius: 6px;
   Font-size: 20px;
   color: white;
@@ -87,13 +106,13 @@ span {
   font-weight: normal;
   line-height: 25px;
 }
-.transparent-button:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
 .heading-buttons {
   display: flex;
   flex-direction: column;
+}
+.guide-wrapper {
+  Display: flex;
+  flex-direction: row;
 }
 .scramble-view {
   width: 100%;
@@ -112,12 +131,16 @@ span {
 .get-started {
   Font-size: 32px;
   margin-bottom: 20px;
+  margin-top: 40px;
   font-weight: bold;
   line-height: 40px;
 }
 textarea {
-  font-size: 20px;
+  padding: 10px;
+  font-size: 21px;
   font-family: 'Circular std', Fallback, sans-serif;
+  resize: none;
+  line-height: 130%;
 }
 .text-input {
   Width: 560px;
@@ -135,14 +158,28 @@ textarea {
   width: 45%;
   display:flex;
 }
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+  background-repeat: no-repeat;
+  background-size: 0.5em auto;
+  background-position: right 0.25em center;
+  padding-right: 5px;
+  padding-left: 10px;
+  background-image: url('icon/dropdownarrow.svg');
+}
 .drop-down-menu {
+  font-family: 'Circular std', Fallback, sans-serif;
   margin-left: 40px;
   width:160px;
   height:44px;
   border-radius: 2px;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 21px;
+}
+.drop-down-menu:hover {
+  background-color:white !important;
 }
 .results {
   width: 80%;
@@ -165,6 +202,7 @@ textarea {
 .users-image {
   height: 31.5px;
   width: 31.5px;
+  margin-right: 15.25px;
 }
 .team {
   font-size: 22px;
@@ -181,19 +219,27 @@ textarea {
 }
 .persons {
   height: 50px;
-  width: 260px;
+  width: 320px;
   border-radius: 6px;
-  Fill: solid;
+  border: none;
   background-color: #8CC484;
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
+  display:flex;
+  align-items: center;
 }
-.copyright{
+.persons-icon {
+  height: 25px;
+  width: 22px;
+  margin: 0px 15px;
+}
+.copyright {
   margin-left: 140px;
 }
 .arrow {
   width: 20%;
+  height: 200px;
   background-image: url('./icon/arrow.png');
   background-repeat: no-repeat;
 }
@@ -235,7 +281,7 @@ textarea {
     flex-direction: column;
   }
   .text-input {
-    Width: 92%;
+    Width: 88%;
     height: 209px;
   }
   .drop-down-menu {
@@ -245,9 +291,10 @@ textarea {
     margin-top: 15px;
   }
   .guide-wrapper {
-    width: 100%
+    width: 100%;
+    flex-direction: column;
   }
-  .green-button, .transparent-button, .persons {
+  .green-button, .transparent-button, .persons, .copy-button {
     width: 94%;
   }
   .text-buttons {
